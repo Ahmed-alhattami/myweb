@@ -1,0 +1,167 @@
+:root {
+  --main--color: #f39312;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+/* setting box */
+.settings-box {
+  position: fixed;
+  top: 0;
+  left: -250px;
+
+  background: #fffffffd;
+  z-index: 1000;
+  width: 250px;
+  min-height: 100vb;
+  transition: 0.3s;
+}
+.open {
+  left: 0px;
+}
+
+.settings-box .settings-content {
+}
+.settings-box .fa-gear {
+  color: #222222;
+  position: absolute;
+  right: -26px;
+  top: 80px;
+  background: #ffffff91;
+  cursor: pointer;
+  padding: 5px;
+}
+.option-box{
+  background: #e6e5e5;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 5px;
+}
+.option-box h4{
+  text-align: center;
+     margin: 5px;
+}
+ .color-list{
+  display: flex;
+   padding: 0%;
+  width: 100%;
+   margin: auto;
+  
+  }
+ .color-list li{
+list-style: none;
+width: 20px;
+height: 20px; 
+background: #000000;
+border-radius: 50%;
+margin: 10px;
+opacity: .5;
+display: inline-block;
+}
+ .color-list li:first-child{
+ background:#f39312;
+}
+ .color-list li:nth-child(2){
+ background:#1900f8;
+}
+ .color-list li:nth-child(3){
+ background:#00f829;
+}
+ .color-list li:nth-child(4){
+ background:#f80000;
+}
+ .color-list li:nth-child(5){
+ background:#f800f8;
+}
+ .color-list li:nth-child(6){
+ background:#0080f8;
+}
+ .color-list li.active{
+ 
+opacity: 1;
+border:2px   #4b4b4b41 solid;
+
+  }
+ 
+
+/* ending box */
+
+/* start landing page */
+.landing-page {
+  min-height: 100vh;
+  background-image: url(images/image-3.jpg);
+  background-size: cover;
+  position: relative;
+}
+.landing-page .overlay {
+  background-color: rgba(0, 0, 0, 0.486);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.header-area {
+  position: relative;
+  color: aliceblue;
+  z-index: 2;
+  display: flex;
+}
+.logo {
+  width: 300px;
+  padding: 15px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.links {
+  list-style: none;
+  width: 100%;
+  text-align: right;
+  padding-left: 0;
+  padding-right: 15px;
+  align-items: center;
+  padding: 15px;
+  font-weight: 100px;
+}
+.links li {
+  display: inline-block;
+  margin-left: 10px;
+  height: fit-content;
+}
+.links li a {
+  color: azure;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.links li a:hover,
+.links li a.active {
+  color: var(--main--color);
+}
+.introduction-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: antiquewhite;
+  text-align: center;
+}
+.introduction-text h1 {
+  font-size: 39px;
+  margin: 24px;
+}
+.introduction-text h1 span {
+  color: var(--main--color);
+}
+.introduction-text p {
+  line-height: 25px;
+  font-size: 20px;
+}
+
+/* ending landing page */
